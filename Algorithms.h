@@ -3,6 +3,12 @@
 
 #include "Graph.h"
 
-// Kişi 2: Kruskal veya Prim algoritmasını çalıştıracak MSTOptimizer sınıfı buraya yazılacak.
+// Geçici Algoritma Sınıfı
+class MSTOptimizer {
+public:
+    static void solveKruskal(PCBGraph& graph) {
+        
+    }
+};
 
 #endif
