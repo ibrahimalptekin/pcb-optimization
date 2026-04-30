@@ -4,7 +4,7 @@
 * **İbrahim Alptekin]** - *[Arayüz Tasarımı ve Entegrasyon]* (Branch: `feat/arayuz`)
 * **[Ahmet Şeref Gölcük]** - *[Veri Yapıları Geliştiricisi]* (Branch: `ahmetgolcuq`)
 * **[Sadettin Şahin]** - *[Graf Mimarı]* (Branch: `sadettinsahin`)
-* **[Seymen Yiğit Ceylan]** - *[Algoritma Geliştiricisi]* (Branch: ``)
+* **[Seymen Yiğit Ceylan]** - *[Algoritma Geliştiricisi]* (Branch: `Algoritma/Kruskal`)
 
 ## Ortak Tartışma ve Kararlar
 Proje başlangıcında ekip üyeleriyle yapılan toplantılarda aşağıdaki kararlar alınmıştır:
