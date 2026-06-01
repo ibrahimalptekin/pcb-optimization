@@ -1,0 +1,6 @@
+İlk önce https://github.com/raysan5/raylib/releases sitesine git ya da dosyalardaki rar dosyasını C'ye yani raylib-6.0_win64_mingw-w64.zip dosyasını çıkart
+Sonra bu dosyada terminal aç ve şunu yaz: g++ main.cpp -I"C:\raylib-6.0_win64_mingw-w64\include" -L"C:\raylib-6.0_win64_mingw-w64\lib" -lraylib -lopengl32 -lgdi32 -lwinmm -std=c++11 -o pcb_app.exe
+
+eğer g++ gibi bir hata alıyorsan bil ki msys2 yüklü değil onu yükle tekrar dene. sonra oluşan exe tuşuna bas visual studio olmadan çalışıyor
+
+
