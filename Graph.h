@@ -1,48 +1,43 @@
 #ifndef GRAPH_H
 #define GRAPH_H
 
-#include "DataStructures.h"
 #include <vector>
+#include <cmath>
 
+// Arayüz için koordinat tutan düğüm yapısı
 struct Node {
     int id;
-    float x;
-    float y;
+    float x, y;
 };
 
 struct Edge {
-    int source;
-    int destination;
-    float weight;
+    int src, dest;
+    double weight;
 };
 
 class PCBGraph {
-private:
-    std::vector<Node> nodes;
-
-    // Komşuluk listesi
-    std::vector<std::vector<Edge>> adjacencyList;
-
-    // Kruskal için tüm kenar listesi
-    std::vector<Edge> edgeList;
-
 public:
-    PCBGraph();
+    std::vector<Node> nodes;
+    std::vector<Edge> edges;
 
-    void addNode(float x, float y);
-    void addEdge(int source, int destination, float weight);
+    // Arayüzden fareyle tıklanan yere yeni bileşen ekler
+    void addNode(float x, float y) {
+        int newId = nodes.size();
+        nodes.push_back({newId, x, y});
+        
+        // Yeni eklenen bileşeni, tahtadaki diğer TÜM bileşenlere bağla (Olası yollar)
+        // Ağırlık (Maliyet) = İki nokta arasındaki piksel mesafesi
+        for (int i = 0; i < newId; i++) {
+            double dist = std::sqrt(std::pow(nodes[i].x - x, 2) + std::pow(nodes[i].y - y, 2));
+            edges.push_back({i, newId, dist});
+        }
+    }
 
-    int getNodeCount() const;
-    int getEdgeCount() const;
-
-    const std::vector<Node>& getNodes() const;
-    const std::vector<Edge>& getEdges() const;
-    const std::vector<std::vector<Edge>>& getAdjacencyList() const;
-
-    bool isConnected() const;
-
-    void BFS(int start) const;
-    void DFS(int start) const;
+    // Tahtayı temizler
+    void clear() {
+        nodes.clear();
+        edges.clear();
+    }
 };
 
 #endif
