@@ -25,7 +25,7 @@ public:
         int newId = nodes.size();
         nodes.push_back({newId, x, y});
         
-        // Yeni eklenen bileşeni, tahtadaki diğer TÜM bileşenlere bağla (Olası yollar)
+        // Yeni eklenen bileşeni, tahtadaki diğer tüm bileşenlere bağla (Olası yollar)
         // Ağırlık (Maliyet) = İki nokta arasındaki piksel mesafesi
         for (int i = 0; i < newId; i++) {
             double dist = std::sqrt(std::pow(nodes[i].x - x, 2) + std::pow(nodes[i].y - y, 2));

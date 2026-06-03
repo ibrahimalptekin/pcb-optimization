@@ -20,7 +20,7 @@ public:
     int find(int i) {
         if (parent[i] == i)
             return i;
-        return parent[i] = find(parent[i]); // Path compression
+        return parent[i] = find(parent[i]); 
     }
 
     bool unite(int i, int j) {

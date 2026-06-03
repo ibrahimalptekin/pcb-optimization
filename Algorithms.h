@@ -7,14 +7,14 @@
 
 class MSTOptimizer {
 public:
-    // Grafı alır, en iyi yolları hesaplar ve arayüzün çizmesi için geri fırlatır (return)
+    // Grafı alır, en iyi yolları hesaplar ve arayüzün çizmesi için geri fırlatır
     static std::vector<Edge> solveKruskal(PCBGraph& graph, double& outTotalCost) {
         std::vector<Edge> mst;
         outTotalCost = 0.0;
         
         if (graph.nodes.empty()) return mst;
 
-        // Bütün olası yolları maliyete (uzunluğa) göre küçükten büyüğe sırala
+        // Bütün olası yolları maliyete göre küçükten büyüğe sırala
         std::vector<Edge> sortedEdges = graph.edges;
         std::sort(sortedEdges.begin(), sortedEdges.end(), [](const Edge& a, const Edge& b) {
             return a.weight < b.weight;
