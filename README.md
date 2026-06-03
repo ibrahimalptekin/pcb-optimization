@@ -1,4 +1,4 @@
-
+📄 **[Projenin Kapsamlı Mimari ve Zaman/Alan Karmaşıklığı Raporunu (PDF) Görüntülemek/İndirmek İçin Tıklayınız](VeriYapilariProje_Grup1.pdf)**
 
 
 # Veri Yapıları Proje Raporu: PCB Bağlantı Ağı Optimizasyonu
