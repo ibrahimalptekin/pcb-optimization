@@ -2,6 +2,7 @@
 
 
 # Veri Yapıları Proje Raporu: PCB Bağlantı Ağı Optimizasyonu
+Bu proje, C++ programlama dili ve Raylib grafik kütüphanesi kullanılarak, Graf Teorisi prensipleri çerçevesinde minimum maliyetli PCB optimizasyonu problemini çözmek ve görselleştirmek amacıyla geliştirilmiş bir masaüstü uygulamasıdır.
 
 ## Proje Ekibi ve Görev Dağılımı
 * **İbrahim Alptekin]** - *[Arayüz Tasarımı ve Entegrasyon]* (Branch: `feat/arayuz`)
@@ -20,7 +21,7 @@ Proje başlangıcında ekip üyeleriyle yapılan toplantılarda aşağıdaki kar
 
 ## Pull Request Öncesi Tamamlananlar
 
-# PCB Optimizasyonu - Graph Modülü
+# Graph Modülü
 
 Bu modül, PCB bağlantı ağı optimizasyonu projesi kapsamında graf veri yapısının oluşturulmasından sorumludur.
 
