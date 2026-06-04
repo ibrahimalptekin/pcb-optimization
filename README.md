@@ -78,3 +78,8 @@ Kullanıcının grafı görsel olarak görebildiği, dinamik olarak yeni düğü
 - Raylib grafik kütüphanesi entegrasyonu gerçekleştirilerek projenin pencere yönetimi, yenilenme hızı (FPS) ve grafik motoru ayarları yapılmıştır.
 - Kullanıcının ekrana fare ile tıklayarak dinamik olarak düğüm yerleştirmesi, düğümleri seçmesi ve aralarında kenar oluşturması için etkileşim mekanizması kodlanmıştır.
 - Arka plandaki Algorithms.h modülünden dönen Minimum Yayılan Ağaç (MST) sonuçlarının, ekranda gerçek zamanlı ve estetik bir şekilde (belirlenen renk ve kalınlıkta çizgilerle) çizilmesi sağlanmıştır.
+
+
+# Projeyi Çalıştırmak İçin Sırasıyla Şu Komutlar Terminalde Çalıştırılmalıdır:
+g++ main.cpp -o pcb_raylib_app.exe -lraylib -lopengl32 -lgdi32 -lwinmm
+.\pcb_raylib_app.exe
